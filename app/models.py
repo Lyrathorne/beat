@@ -62,7 +62,7 @@ class Wish(Base):
     __tablename__ = "wishes"
 
     id = Column(Integer, primary_key=True)
-    title = Column(String(255), nullable=False)
+    
     rating = Column(Integer, nullable=False, default=0)
 
     created_by_user_id = Column(Integer, ForeignKey("users.id"), nullable=True)
